@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="red">#F44336</color>
+    <color name="dark_red">#C3352B</color>
+    <color name="blue_dark">#ff001c40</color>
+    <color name="blue_normal">#ff1759d4</color>
+    <color name="blue_light">#ff267ae9</color>
+    <color name="blue_sky">#ff4fb8ff</color>
+    <color name="menu_white">#fffffdf5</color>
+    <color name="menu_tan">#ffe5e0cc</color>
+    <color name="menu_orange">#ffffc579</color>
+</resources>

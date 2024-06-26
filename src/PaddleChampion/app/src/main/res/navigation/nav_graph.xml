@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/gameStartFragment">
+
+    <fragment
+        android:id="@+id/gameStartFragment"
+        android:name="com.android.paddlechampion.GameStartFragment"
+        android:label="GameStartFragment"
+        tools:layout="@layout/fragment_game_start" >
+        <action
+            android:id="@+id/action_gamestart_to_gameplay"
+            app:destination="@id/gamePlayFragment" />
+        <action
+            android:id="@+id/action_gamestart_to_gameend"
+            app:destination="@id/gameEndFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gamePlayFragment"
+        android:name="com.android.paddlechampion.GamePlayFragment"
+        android:label="GamePlayFragment"
+        tools:layout="@layout/fragment_game_play" >
+        <action
+            android:id="@+id/action_gameplay_to_gameend"
+            app:destination="@id/gameEndFragment" />
+        <action
+            android:id="@+id/action_gameplay_to_gamestart"
+            app:destination="@id/gameStartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameEndFragment"
+        android:name="com.android.paddlechampion.GameEndFragment"
+        android:label="GameEndFragment"
+        tools:layout="@layout/fragment_game_end" >
+        <action
+            android:id="@+id/action_gameend_to_gamestart"
+            app:destination="@id/gameStartFragment" />
+        <action
+            android:id="@+id/action_gameend_to_gameplay"
+            app:destination="@id/gamePlayFragment" />
+    </fragment>
+</navigation>

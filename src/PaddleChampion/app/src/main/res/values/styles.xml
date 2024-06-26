@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MenuButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/menu_button</item>
+        <item name="android:fontFamily">@font/toriko</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+</resources>
